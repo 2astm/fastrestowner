@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_restaurants">
+
+    <fragment
+        android:id="@+id/navigation_restaurants"
+        android:name="com.example.fastrestowner.fragments.restaurants.RestaurantFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_restaurant" >
+        <action
+            android:id="@+id/action_navigation_restaurants_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.fastrestowner.fragments.menu.MenuFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/navigation_members"
+        android:name="com.example.fastrestowner.fragments.members.MembersFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_members" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.example.fastrestowner.fragments.orders.OrdersFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_members" />
+</navigation>

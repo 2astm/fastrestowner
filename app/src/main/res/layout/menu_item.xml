@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="5dp"
+    android:background="#222121">
+
+    <ImageView
+        android:id="@+id/item_menu_logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/outline_ramen_dining_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/allerta"
+        android:text="Example title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_edit"
+        app:layout_constraintEnd_toEndOf="@+id/title_edit"
+        app:layout_constraintStart_toStartOf="@+id/title_edit"
+        app:layout_constraintTop_toTopOf="@+id/title_edit" />
+
+    <EditText
+        android:id="@+id/title_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="Example title"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_menu_logo"
+        app:layout_constraintStart_toEndOf="@+id/editTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="Ingredient 1, Ingredient 2, Ingredient 3, Ingredient 4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ingredients_edit"
+        app:layout_constraintEnd_toEndOf="@+id/ingredients_edit"
+        app:layout_constraintStart_toStartOf="@+id/ingredients_edit"
+        app:layout_constraintTop_toTopOf="@+id/ingredients_edit" />
+
+    <EditText
+        android:id="@+id/ingredients_edit"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/allerta"
+        android:text="Ingredient 1, Ingredient 2, Ingredient 3, Ingredient 4"
+        android:textSize="14sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toEndOf="@+id/title_edit"
+        app:layout_constraintStart_toStartOf="@+id/title_edit"
+        app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:gravity="right"
+        android:text="Price:"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_edit"
+        app:layout_constraintEnd_toStartOf="@+id/price_edit"
+        app:layout_constraintStart_toEndOf="@+id/priceEdit"
+        app:layout_constraintTop_toTopOf="@+id/price_edit" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 UAH"
+        app:layout_constraintBottom_toBottomOf="@+id/priceText"
+        app:layout_constraintEnd_toEndOf="@+id/price_edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/priceText"
+        app:layout_constraintTop_toTopOf="@+id/priceText" />
+
+    <EditText
+        android:id="@+id/price_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 UAH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_edit" />
+
+    <ImageView
+        android:id="@+id/ingredientsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ingredients_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ingredients_edit"
+        app:srcCompat="@drawable/outline_edit_24" />
+
+    <ImageView
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/title_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_edit"
+        app:srcCompat="@drawable/outline_edit_24" />
+
+    <ImageView
+        android:id="@+id/priceEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/priceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/priceText"
+        app:srcCompat="@drawable/outline_edit_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_menu_logo"
+        app:srcCompat="@drawable/outline_edit_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
